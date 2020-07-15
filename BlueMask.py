@@ -1,7 +1,10 @@
+#Python code for color detection
 import cv2
-import sys
 import numpy as np 
+
+
 cap=cv2.VideoCapture(0)
+
 while(1):
    _,frame = cap.read()   
    hsv=cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
@@ -14,6 +17,7 @@ while(1):
    cv2.imshow('res',res)
    if cv2.waitKey(5) & 0xFF ==ord('q'):
      break
+
 cap.release()
 cv2.destroyAllWindows()
 

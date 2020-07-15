@@ -30,12 +30,11 @@ cv2.imshow('res',res)
   
 # This displays the frame, mask  
 # and res which we created in 3 separate windows. 
-k = cv2.waitKey(5) & 0xFF
-if k == 27: 
-break
-  
+if cv2.waitKey(0) & 0xFF == 27:
+    cv2.destroyAllWindows() 
+
 # Destroys all of the HighGUI windows. 
-cv2.destroyAllWindows() 
+
   
 # release the captured frame 
 cap.release() 
