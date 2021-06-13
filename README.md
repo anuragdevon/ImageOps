@@ -1,5 +1,5 @@
 # Computer Vision
-Contains image processing algorithms. Computer vision algorithms will be commited soon :)
+Contains image processing and computer vision algorithms.
 
 ## Language Used
 > Python
